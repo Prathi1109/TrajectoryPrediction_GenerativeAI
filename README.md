@@ -9,6 +9,10 @@ The following are the research questions answered through this work:
 
 
 <!--![Generative AI Model](Figures/GenerativeProcess.png | width = 100)-->
+## Generative AI Model
+
+The generative model is learned by estimating the distributions of hidden states P(s) and the posterior, P(s$\mid$o). The probability of the observed data P(o) is called the model evidence which quantifies how good are the predictions of the model. To receive higher values of model evidence P(o), we should choose our model parameters accordingly. Hence, maximizing the model evidence is simply minimising the surprise in terms of active inference . Surprise is mathematically represented as -log P(o). 
+
 
 
 <img src="Figures/GenerativeProcess.png" alt="Alt Text" width="300" height="200">
