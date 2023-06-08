@@ -8,4 +8,4 @@ The following are the research questions answered through this master thesis:
 3. Is it possible to increase the performance of a Deep Active Inference Model using temporal ensemble?
 
 
-![Generative AI Model](GenerativeProcess.png)
+![Generative AI Model](Figures/GenerativeProcess.png | width = 100)
