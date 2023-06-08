@@ -14,7 +14,7 @@ The following are the research questions answered through this work:
 <img src="Figures/GenerativeProcess.png" alt="Alt Text" width="300" height="200">
 
 
-# Generatve AI Model Architecture
+# Generative AI Model Architecture
 
 ## Encoder- Decoder Network Architecture
 <img src="Figures/Encoder.png" alt="Alt Text" width="400" height="500">
