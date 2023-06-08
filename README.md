@@ -28,6 +28,13 @@ The generative model is learned by estimating the distributions of hidden states
 ## State Transition 
 <img src="Figures/Transition.png" alt="Alt Text" width="300" height="500">
 
+
+## Dataset 
+
+The models are trained with the highway environment. It comprises of four different lanes as shown in Figure \ref{fig:Highway-Environment} and the vehicles can appear in any of these four lanes.  
+
+<img src="Figures/highway.png" alt="Alt Text" width="500" height="100">
+
 ## Increasing Reward during training
 
 <img src="Figures/TrainingReward_PF5.png" alt="Alt Text" width="300" height="200">
