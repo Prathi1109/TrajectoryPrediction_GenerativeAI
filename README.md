@@ -65,7 +65,14 @@ The model trained with the following configuration with policy frequency 1 is na
 | x velocity    | 96.12.              | 95.70                   |
 | y velocity    | 91.02               | 91.01                   |
 
+# Qualitative Analysis
 
+While evaluating the PF5 model, it has been observed that the ego vehicle learns to drive slowly and maintains an average speed of 21 m/s to avoid collisions. In the initial updates, we observed that the ego vehicle maintains an average speed of 29m/s which ends up colliding more often, achieving a total reward of 20\%. In frame 2, the ego vehicle avoids collision with the other vehicle by moving on to the first lane. 
 
+![Frame 1](Figures/1.png) | ![Frame 2](Figures/2.png)
+:-------------------------:|:-------------------------:
+![Frame 3](Figures/3.png) | ![Frame 4](Figures/4.png)
+
+*Figure 1: Demonstration of overtaking scene*
 
 
