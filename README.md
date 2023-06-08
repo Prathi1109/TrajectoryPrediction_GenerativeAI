@@ -44,6 +44,13 @@ The environment outputs the observation at each time step in the form of vectors
 - **Policy frequency**: The frequency at which the agent can take decisions. A higher policy frequency is analogous to a short-term model as not many changes happen between the successive observations from the environment. It should always be lower than the simulation frequency.
 - **Duration**: The time taken for a single episode to run.
 
+The model trained with the following configuration with policy frequency 1 is named as **PF1** model.
+
+- **vehicles count**: 5
+- **absolute**: false
+- **policy frequency**: 5
+- **simulation frequency**: 15
+- **duration**: 200
 
 ## Increasing Reward during training
 
