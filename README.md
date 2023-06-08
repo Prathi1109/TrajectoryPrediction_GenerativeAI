@@ -9,3 +9,5 @@ The following are the research questions answered through this master thesis:
 
 
 ![Generative AI Model](Figures/GenerativeProcess.png | width = 100)
+<img src="Figures/GenerativeProcess.png" alt="Alt Text" width="300" height="200">
+
