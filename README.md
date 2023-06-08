@@ -1,6 +1,10 @@
 
 ## Research Questions
 
+
+
+To avoid collisions, we should plan the vehicle's path by predicting the future positions of all the objects surrounding the vehicle correctly. Hence, planning and prediction are interdependent. In our approach, we solve prediction and planning through a biologically plausible model. The most challenging task for an autonomous vehicle is to make decisions and plan under uncertainty \cite{zhan2019interactive}. Using Active Inference, we derive state and Model uncertainty through the free-energy principle discussed in detail in section 2.3 and plan by minimizing these uncertainties\cite{friston2018deep}. Reinforcement learning agents are very popular in solving planning tasks. However, we prefer the active inference approach over reinforcement learning \cite{10.1371/journal.pone.0006421}, in our problem for many reasons, described in section 2.4. One of the main reasons is that the active inference approach does not completely rely on the external reward. Instead, it is just one of the preference terms in active inference. A brief overview of Reinforcement Learning and Active Inference and how they differ from each other is discussed in the following chapters.
+
 The following are the research questions answered through this work:
 
 1. Is it possible to predict the future states of the other objects in the autonomous driving environment and plan the path of the self-driving vehicle using a generative AI model called Deep Active Inference?
