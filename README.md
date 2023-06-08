@@ -3,12 +3,10 @@
 
 The following are the research questions answered through this work:
 
-1. Is it possible to predict the future states of the other objects in the autonomous driving environment and plan the path of the self-driving vehicle using Active Inference approach?
+1. Is it possible to predict the future states of the other objects in the autonomous driving environment and plan the path of the self-driving vehicle using a generative AI model called Deep Active Inference?
 2. What is the possibility to derive uncertainty-based estimators for prediction and planning in autonomous driving?
 3. Is it possible to increase the performance of a Deep Active Inference Model using temporal ensemble?
 
-
-<!--![Generative AI Model](Figures/GenerativeProcess.png | width = 100)-->
 ## Generative AI Model
 
 The generative model is learned by estimating the distributions of hidden states P(s) and the posterior, P(s|o). The probability of the observed data P(o) is called the model evidence which quantifies how good are the predictions of the model. To receive higher values of model evidence P(o), we should choose our model parameters accordingly. Hence, maximizing the model evidence is simply minimising the surprise in terms of active inference . Surprise is mathematically represented as -log P(o). 
