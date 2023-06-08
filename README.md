@@ -1,5 +1,5 @@
 
-## Research Questions
+## Planning the path of self driving vehicle by predicting the future and velocities of other objects around the car
 
 
 
