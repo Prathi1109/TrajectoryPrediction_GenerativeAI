@@ -35,6 +35,16 @@ The models are trained with the highway environment. It comprises of four differ
 
 <img src="Figures/highway.png" alt="Alt Text" width="500" height="100">
 
+
+The environment outputs the observation at each time step in the form of vectors or images if given configuration type to be "kinematics" or "GrayscaleObservation" respectively. We have built the model to deal with the vector data instead of images, and the observation type is specified as "kinematics". The other configuration parameters used are as follows:
+
+- **Vehicles\_count**: Total number of vehicles in the environment.
+- **Absolute**: If configured as false, then the coordinates of other vehicles in the frame are relative to the ego vehicle while the ego vehicle stays absolute with respect to its position.
+- **Simulation frequency**: The rate of updating the simulated agents and their trajectories in the simulator.
+- **Policy frequency**: The frequency at which the agent can take decisions. A higher policy frequency is analogous to a short-term model as not many changes happen between the successive observations from the environment. It should always be lower than the simulation frequency.
+- **Duration**: The time taken for a single episode to run.
+
+
 ## Increasing Reward during training
 
 <img src="Figures/TrainingReward_PF5.png" alt="Alt Text" width="300" height="200">
