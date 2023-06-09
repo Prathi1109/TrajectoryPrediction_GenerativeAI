@@ -18,7 +18,7 @@ The generative model is learned by estimating the distributions of hidden states
 
 
 <img src="Figures/GenerativeProcess.png" alt="Alt Text" width="300" height="200">
-<img src="Figures/DAI_EFE_Model.png" alt="Alt Text" width="300" height="200">
+<img src="Figures/DAI_ModelArchitecture.png" alt="Alt Text" width="300" height="200">
 <img src="Figures/DAI_EFE_Model.png" alt="Alt Text" width="300" height="200">
 
 # Generative AI Model Architecture
