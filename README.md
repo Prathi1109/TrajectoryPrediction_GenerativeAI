@@ -18,15 +18,17 @@ The generative model is learned by estimating the distributions of hidden states
 
 
 <img src="Figures/GenerativeProcess.png" alt="Alt Text" width="300" height="200">
-
+<img src="Figures/DAI_EFE_Model.png" alt="Alt Text" width="300" height="200">
+<img src="Figures/DAI_EFE_Model.png" alt="Alt Text" width="300" height="200">
 
 # Generative AI Model Architecture
 
 ## Encoder- Decoder Network Architecture
 <img src="Figures/Encoder.png" alt="Alt Text" width="400" height="500">
 
+
 ## State Transition 
-<img src="Figures/Transition.png" alt="Alt Text" width="300" height="500">
+<img src="Figures/Transition.png" alt="Alt Text" width="500" height="500">
 
 ## Optuna Hyperparameter Optimization
 
