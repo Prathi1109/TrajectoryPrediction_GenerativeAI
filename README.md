@@ -15,12 +15,20 @@ The following are the research questions answered through this work:
 
 The generative model is learned by estimating the distributions of hidden states P(s) and the posterior, P(s|o). The probability of the observed data P(o) is called the model evidence which quantifies how good are the predictions of the model. To receive higher values of model evidence P(o), we should choose our model parameters accordingly. Hence, maximizing the model evidence is simply minimising the surprise in terms of active inference . Surprise is mathematically represented as -log P(o). 
 
+Deep Active Inference (DAI) is a combination of active inference with deep neural networks. A deep active inference agent learns the generative model of the environment and interact with it to understand the dynamics of the world
+
+we make use of three neural networks for interactions between the agent and the environment.
+Here Pθo represents the transition model, Qφs represents the recognition or inference model and Pθo and Pθs represents the generative model.
 
 
-<img src="Figures/GenerativeProcess.png" alt="Alt Text" width="300" height="200">
+
+<p align="center">
+    <img src="Figures/GenerativeProcess.png" alt="Generative Process" width="500" height="300" />
+</p>
+
 <p float="left">
-    <img src="Figures/DAI_ModelArchitecture.png" alt="DAI Model Architecture" width="300" height="200" />
-    <img src="Figures/DAI_EFE_Model.png" alt="DAI EFE Model" width="300" height="200" />
+    <img src="Figures/DAI_ModelArchitecture.png" alt="DAI Model Architecture" width="500" height="400" />
+    <img src="Figures/DAI_EFE_Model.png" alt="DAI EFE Model" width="500" height="400" />
 </p>
 
 # Generative AI Model Architecture
