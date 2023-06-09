@@ -41,7 +41,7 @@ Here Pθo represents the transition model, Qφs represents the recognition or in
 
 
 ## State Transition 
-<img src="Figures/Transition.png" alt="Alt Text" width="500" height="500">
+<img src="Figures/Transition.png" alt="Alt Text" width="300" height="500">
 
 ## Optuna Hyperparameter Optimization
 
