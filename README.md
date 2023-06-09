@@ -30,8 +30,8 @@ Here Pθo represents the transition model, Qφs represents the recognition or in
 
 
 <p float="left">
-    <img src="Figures/DAI_ModelArchitecture.png" alt="DAI Model Architecture" width="500" height="400" />
-    <img src="Figures/DAI_EFE_Model.png" alt="DAI EFE Model" width="500" height="400" />
+    <img src="Figures/DAI_ModelArchitecture.png" alt="DAI Model Architecture" width="450" height="400" />
+    <img src="Figures/DAI_EFE_Model.png" alt="DAI EFE Model" width="450" height="400" />
 </p>
 
 # Generative AI Model Architecture
