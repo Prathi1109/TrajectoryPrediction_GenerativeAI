@@ -1,5 +1,5 @@
 
-## Planning the path of self driving vehicle by predicting the future and velocities of other objects around the car using a Generative AI approach called Deep Active Inference
+## Planning the path of self driving vehicle by predicting the future and velocities of other objects around the car using a **Generative AI** approach called Deep Active Inference
 
 
 
@@ -27,6 +27,42 @@ The generative model is learned by estimating the distributions of hidden states
 
 ## State Transition 
 <img src="Figures/Transition.png" alt="Alt Text" width="300" height="500">
+
+## Optuna Hyperparameter Optimization
+
+We have used **Optuna hyperparameter optimization** technique for choosing the right parameters for the model.
+This technique is well known for easy parallelization and uses state-of-the-art algorithms like grid search, random search for sampling hyperparameters. The first step is to define set of hyperparameters that we want to tune with the ranges. The second step is to define an objective function that can be minimized or maximized by performing multiple trials with different set of hyperparameter values at each trial. We can define the number of trials to be performed. 
+
+We have experimented with two objective functions: one to maximize the total reward and the other is to minimize the mean squared error of the predictions. We have performed multiple trials starting from 100 to 2000 to understand the behavior of hyperparameters over the model. After a successful iteration of the number of trials specified, Optuna suggests the optimal values for all the hyperparameters defined based on these trials. 
+
+Through optuna optimization, we got an approximate estimation of behavior of different hyperparameters and selected the values mentioned in the following tables. We performed experiments with batch sizes 16 and 32 and inferred that the model trained with batch size 16 shows a stable increase in the reward.
+
+### Hyperparameters
+
+| Hyperparameters               |                      |
+| ----------------------------- | -------------------- |
+| batchsize                     | 16                   |
+| learningrate - transition network | 0.001            |
+| learningrate - reconstruction network | 0.0005        |
+| beta-s                        | 10                   |
+| samples(N)                    | 10                   |
+
+### Transition Network
+
+| Transition Network           |                      |
+| ----------------------------- | -------------------- |
+| No of layers                  | 3                    |
+| No of units                   | 1024                 |
+| Units in latent dimension     | 32                   |
+| Dropout                       | 0.5                  |
+
+### Reconstruction Network (Encoder & Decoder)
+
+| Reconstruction Network (Encoder & Decoder)  |                      |
+| ----------------------------- | -------------------- |
+| No of layers                  | 2                    |
+| No of units                   | 256                  |
+| Dropout                       | 0.5                  |
 
 
 ## Dataset 
@@ -65,7 +101,14 @@ The model trained with the following configuration with policy frequency 1 is na
 | x velocity    | 96.12.              | 95.70                   |
 | y velocity    | 91.02               | 91.01                   |
 
+# Qualitative Analysis
 
+While evaluating the PF5 model, it has been observed that the ego vehicle learns to drive slowly and maintains an average speed of 21 m/s to avoid collisions. In the initial updates, we observed that the ego vehicle maintains an average speed of 29m/s which ends up colliding more often, achieving a total reward of 20\%. In frame 2, the ego vehicle avoids collision with the other vehicle by moving on to the first lane. 
 
+![Frame 1](Figures/1.png) | ![Frame 2](Figures/2.png)
+:-------------------------:|:-------------------------:
+![Frame 3](Figures/3.png) | ![Frame 4](Figures/4.png)
+
+*Figure 1: Demonstration of overtaking scene*
 
 
