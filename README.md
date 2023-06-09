@@ -17,14 +17,17 @@ The generative model is learned by estimating the distributions of hidden states
 
 Deep Active Inference (DAI) is a combination of active inference with deep neural networks. A deep active inference agent learns the generative model of the environment and interact with it to understand the dynamics of the world
 
-we make use of three neural networks for interactions between the agent and the environment.
-Here Pθo represents the transition model, Qφs represents the recognition or inference model and Pθo and Pθs represents the generative model.
-
-
 
 <p align="center">
     <img src="Figures/GenerativeProcess.png" alt="Generative Process" width="500" height="300" />
 </p>
+
+
+
+we make use of three neural networks for interactions between the agent and the environment.
+Here Pθo represents the transition model, Qφs represents the recognition or inference model and Pθo and Pθs represents the generative model.
+
+
 
 <p float="left">
     <img src="Figures/DAI_ModelArchitecture.png" alt="DAI Model Architecture" width="500" height="400" />
