@@ -1,5 +1,5 @@
 
-## Planning the path of self driving vehicle by predicting the future and velocities of other objects around the car using a **Generative AI** approach called Deep Active Inference
+## Planning the path of self driving vehicle by predicting the future positions and velocities of other objects around the car using a **Generative AI** approach called Deep Active Inference
 
 
 
